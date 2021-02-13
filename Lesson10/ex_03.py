@@ -19,9 +19,9 @@ for line in fhand:
         letters[x] = letters.get(x,0) + 1
 
 for key, val in letters.items():
-    letterlist.append((val, key))
+    letterlist.append((key, val))
 
-letterlist.sort(reverse=True)
+letterlist.sort()
 
 for val, key in letterlist:
     print(key, val)
